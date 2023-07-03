@@ -9,7 +9,7 @@ namespace ShoeStore
 
         public void PrintShoes()
         {
-            if (shoe.Count == 0)
+            if (shoes.Count == 0)
             {
                 Console.WriteLine("\nThe shoe closet is empty.");
             }
@@ -31,7 +31,7 @@ namespace ShoeStore
             {
                 Console.WriteLine($"Press {i} to add a {(Style)i}");
             }
-            Console.WriteLine("Enter a style: ");
+            Console.Write("Enter a style: ");
             if (int.TryParse(Console.ReadKey().KeyChar.ToString(), out int style))
             {
                 Console.Write("\nEnter the color: ");
